@@ -62,7 +62,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Cambio para probar git",
+            "heading": "Cambio para probar git desde mi local",
             "heading_size": "h1"
           }
         },
