@@ -67,7 +67,7 @@
             "text_gkx7xy": {
               "type": "text",
               "settings": {
-                "text": "<h3>Hola soy un conjunto de bloques predeterminado creado a mano!</h3>",
+                "text": "<h3>Hola Mundo!</h3>",
                 "alignment": "left"
               },
               "blocks": {}
