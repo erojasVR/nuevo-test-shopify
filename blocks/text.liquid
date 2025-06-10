@@ -1,0 +1,51 @@
+<div class="text-block text-{{ block.settings.alignment }}">
+  {% comment %} Es la misma logica de usar patron de composicion y crear componentes en react{% endcomment %}
+  {{ block.settings.text }}
+</div>
+
+{% comment %}
+  {
+      "name": "nombre del componente",
+      "setting": [ propiedades del componente,
+          {
+              "type": "tipo de componente, esto es como se ve en el editor de temas las heramientas, igual que los controles de Storybook.storie",
+              "id": "como se accede a esta propiedad en el código block.setting.<id>",
+              "Label": "Label del control en el editor de temas",
+          },
+      ],
+      "presets": [ ajustes pre establecidos para mostrar en el editor de temas
+          {
+              "name": "Nombre del preset",
+              "settings": {
+                  "text": "<p>Hola Mundo</p>", se hace referencia a la propiedad con el id de esta y el valor que tendrá
+              },
+          },
+      ],
+  }
+{% endcomment %}
+{% schema %}
+{
+  "name": "Text",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "text_alignment",
+      "id": "alignment",
+      "label": "Alignment"
+    }
+  ],
+  "presets": [
+    { "name": "Text" },
+    {
+      "name": "Content",
+      "settings": {
+        "text": "<p>Hello, world!</p>"
+      }
+    }
+  ]
+}
+{% endschema %}
